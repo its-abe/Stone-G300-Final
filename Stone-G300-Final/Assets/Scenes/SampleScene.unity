@@ -14355,6 +14355,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4659b345d3841b144845c3b8dbf8a9a0, type: 3}
+--- !u!1 &1709642425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1709642426}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1709642426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709642425}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.7171013, y: -2.2374682, z: 9.565056}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1719394810
 GameObject:
   m_ObjectHideFlags: 0
@@ -16913,11 +16944,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1579837517782107490, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.19
+      value: 0.19000006
       objectReference: {fileID: 0}
     - target: {fileID: 1579837517782107490, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0087153
+      value: 0.00871563
       objectReference: {fileID: 0}
     - target: {fileID: 1579837517782107490, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16925,15 +16956,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1579837517782107490, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1579837517782107490, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1579837517782107490, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1579837517782107490, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16946,6 +16977,23 @@ PrefabInstance:
     - target: {fileID: 1579837517782107490, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984985030959327146, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984985030959327146, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 353271aa8fb63f44ebd90ad526ef2e9d, type: 2}
+    - target: {fileID: 5201107413265554368, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"player","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201107413265554368, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5201107413265554368, guid: cd4c5fc700e04fe439238b6612be314f, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
@@ -16962,7 +17010,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 705507995}
   - {fileID: 267839343}
-  - {fileID: 2124921474009615974}
   - {fileID: 984825886}
   - {fileID: 711456728}
   - {fileID: 1823755630}
@@ -16973,3 +17020,5 @@ SceneRoots:
   - {fileID: 362293558}
   - {fileID: 1533855019}
   - {fileID: 973627695}
+  - {fileID: 1709642426}
+  - {fileID: 2124921474009615974}
